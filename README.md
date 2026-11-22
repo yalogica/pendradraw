@@ -13,13 +13,8 @@
   </p>
 
   <p align="center">
-  <a href="https://yalogica.com">
-    <img alt="Yalogica website" src="https://img.shields.io/badge/Website-yalogica.com-6558d9?style=for-the-badge" />
-  </a>
-  <p>
   <a href="https://github.com/yalogica/pendradraw/releases/latest">
-    <img alt="Download for Windows" src="https://img.shields.io/badge/Download-Windows%20installer-6558d9?style=for-the-badge&logo=windows"
-    />
+    <img alt="Download for Windows" src="https://img.shields.io/badge/Download-Windows%20installer-6558d9?style=for-the-badge&logo=windows" />
   </a>
   </p>
   </p>
