@@ -16,9 +16,6 @@
   <a href="https://yalogica.com">
     <img alt="Yalogica website" src="https://img.shields.io/badge/Website-yalogica.com-6558d9?style=for-the-badge" />
   </a>
-  <a href="LICENSE">
-    <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg" />
-  </a>
   </p>
 </div>
 
@@ -127,3 +124,7 @@ Install the following tools:
 - [Node.js](https://nodejs.org) 20 or newer
 - [pnpm](https://pnpm.io) 10 or newer
 - [Rust](https://rustup.rs) with the stable toolchain
+
+## License and trademarks
+
+MIT, see [LICENSE](LICENSE).
