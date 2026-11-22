@@ -9,7 +9,7 @@ type TabBarProps = {
 const handleTabsWheel = (event: ReactWheelEvent<HTMLDivElement>) => {
   const container = event.currentTarget;
 
-  // Горизонтальный жест тачпада браузер обработает самостоятельно.
+  // Let the browser handle horizontal touchpad gestures.
   if (Math.abs(event.deltaX) >= Math.abs(event.deltaY)) {
     return;
   }
@@ -17,7 +17,7 @@ const handleTabsWheel = (event: ReactWheelEvent<HTMLDivElement>) => {
   const previousScrollLeft = container.scrollLeft;
   container.scrollLeft += event.deltaY;
 
-  // Блокируем вертикальную прокрутку только если tabs действительно прокрутились.
+  // Prevent vertical scrolling only when the tab container actually scrolled.
   if (container.scrollLeft !== previousScrollLeft) {
     event.preventDefault();
   }
