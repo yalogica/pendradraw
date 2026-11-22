@@ -126,6 +126,14 @@ Install the following tools:
 - [pnpm](https://pnpm.io) 10 or newer
 - [Rust](https://rustup.rs) with the stable toolchain
 
+### Install and run
+
+```bash
+cd src/monorepo
+pnpm install
+pnpm dev
+```
+
 ## License and trademarks
 
 MIT, see [LICENSE](LICENSE).
