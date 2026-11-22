@@ -12,20 +12,13 @@
     Draw diagrams, sketch ideas and keep your work in real files.
   </p>
 
-  <p>
-    <a href="https://yalogica.com">
-      <img
-        alt="Yalogica website"
-        src="https://img.shields.io/badge/Website-yalogica.com-6558d9?style=for-the-badge"
-      />
-    </a>
-    
-    <a href="LICENSE">
-      <img
-        alt="MIT license"
-        src="https://img.shields.io/badge/license-MIT-blue.svg"
-      />
-    </a>
+  <p align="center">
+  <a href="https://yalogica.com">
+    <img alt="Yalogica website" src="https://img.shields.io/badge/Website-yalogica.com-6558d9?style=for-the-badge" />
+  </a>
+  <a href="LICENSE">
+    <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg" />
+  </a>
   </p>
 </div>
 
