@@ -19,23 +19,13 @@
         src="https://img.shields.io/badge/Website-yalogica.com-6558d9?style=for-the-badge"
       />
     </a>
-  </p>
-
-  <p>
+    
     <a href="LICENSE">
       <img
         alt="MIT license"
         src="https://img.shields.io/badge/license-MIT-blue.svg"
       />
     </a>
-    <img
-      alt="Tauri"
-      src="https://img.shields.io/badge/Tauri-2-24C8DB?logo=tauri&logoColor=white"
-    />
-    <img
-      alt="React"
-      src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black"
-    />
   </p>
 </div>
 
@@ -128,12 +118,12 @@ On macOS, use `Cmd` instead of `Ctrl`.
 
 PendraDraw is built with:
 
-- [Excalidraw](https://github.com/excalidraw/excalidraw) — drawing engine
-- [React](https://react.dev) — application interface
-- [Tauri](https://tauri.app) — native desktop shell
-- [Zustand](https://zustand.docs.pmnd.rs) — application state
-- [Vite](https://vite.dev) — frontend tooling
-- [Lucide](https://lucide.dev) — interface icons
+- [Excalidraw](https://github.com/excalidraw/excalidraw) - drawing engine
+- [React](https://react.dev) - application interface
+- [Tauri](https://tauri.app) - native desktop shell
+- [Zustand](https://zustand.docs.pmnd.rs) - application state
+- [Vite](https://vite.dev) - frontend tooling
+- [Lucide](https://lucide.dev) - interface icons
 
 ## Build from source
 
@@ -144,16 +134,3 @@ Install the following tools:
 - [Node.js](https://nodejs.org) 20 or newer
 - [pnpm](https://pnpm.io) 10 or newer
 - [Rust](https://rustup.rs) with the stable toolchain
-- Platform dependencies required by the
-  [Tauri prerequisites](https://v2.tauri.app/start/prerequisites/)
-
-Windows development additionally requires:
-
-- Microsoft Visual Studio C++ Build Tools
-- Microsoft Edge WebView2
-- Rust MSVC toolchain
-
-Install the Windows Rust toolchain with:
-
-```powershell
-rustup default stable-msvc
