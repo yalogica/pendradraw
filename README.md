@@ -17,10 +17,11 @@
     <img alt="Download for Windows" src="https://img.shields.io/badge/Download-Windows%20installer-6558d9?style=for-the-badge&logo=windows" />
   </a>
   </p>
+  
+  <p align="center">
+  <img src="docs/assets/pendradraw-preview.gif" width="900" alt="PendraDraw application preview" />
   </p>
 </div>
-
----
 
 > **Independent application.** PendraDraw is built on the open-source
 > [Excalidraw](https://github.com/excalidraw/excalidraw) drawing engine.
