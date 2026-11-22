@@ -18,15 +18,11 @@
   </a>
   </p>
   
-  <p>
-    <a href="https://tauri.app">
-      <img alt="Built with Tauri" src="https://img.shields.io/badge/Built%20with-Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white" />
-    </a>
-    <a href="LICENSE">
-      <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-2f80ed?style=flat-square" />
-    </a>
+  <p align="center">
+    <a href="https://tauri.app"><img alt="Built with Tauri" src="https://img.shields.io/badge/Built%20with-Tauri-2f80ed?style=flat-square&logo=tauri&logoColor=white" /></a>
+    <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/License-MIT-2f80ed?style=flat-square" /></a>
   </p>
-  
+    
   <p align="center">
   <img src="docs/assets/pendradraw-preview.gif" width="900" alt="PendraDraw application preview" />
   </p>
