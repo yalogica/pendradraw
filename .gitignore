@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Frontend builds
+src/monorepo/packages/app/dist/
+src/monorepo/packages/excalidraw/dist/
+
+# Rust build artifacts
+**/target/
+
+# Generated Tauri schemas
+src/monorepo/packages/tauri/src-tauri/gen/schemas/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Misc files
+scripts.txt
+
+# Logs
+*.log
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

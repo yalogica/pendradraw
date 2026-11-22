@@ -1,0 +1,84 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "jsx": "react-jsx",
+    "types": ["node"],
+    "rootDir": ".",
+    "outDir": "./dist/types",
+    "paths": {
+      "@excalidraw/excalidraw": [
+        "./src/excalidraw/index.tsx"
+      ],
+      "@excalidraw/excalidraw/*": [
+        "./src/excalidraw/*"
+      ],
+      "@excalidraw/common": [
+        "./src/common/src/index.ts"
+      ],
+      "@excalidraw/common/*": [
+        "./src/common/src/*"
+      ],
+      "@excalidraw/element": [
+        "./src/element/src/index.ts"
+      ],
+      "@excalidraw/element/*": [
+        "./src/element/src/*"
+      ],
+      "@excalidraw/math": [
+        "./src/math/src/index.ts"
+      ],
+      "@excalidraw/math/*": [
+        "./src/math/src/*"
+      ],
+      "@excalidraw/utils": [
+        "./src/utils/src/index.ts"
+      ],
+      "@excalidraw/utils/*": [
+        "./src/utils/src/*"
+      ],
+      "@excalidraw/fractional-indexing": [
+        "./src/fractional-indexing/src/index.ts"
+      ],
+      "@excalidraw/fractional-indexing/*": [
+        "./src/fractional-indexing/src/*"
+      ]
+    },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationMap": false,
+    "emitDeclarationOnly": true,
+    "noEmitOnError": true,
+    "useDefineForClassFields": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/**/__tests__/**",
+    "src/**/__snapshots__/**",
+    "src/**/test-utils.ts",
+    "src/**/*.test.helpers.tsx",
+    "dist",
+    "node_modules"
+  ]
+}

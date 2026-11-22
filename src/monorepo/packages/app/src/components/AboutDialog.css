@@ -1,0 +1,342 @@
+.about-backdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(22, 20, 31, 0.48);
+  backdrop-filter: blur(5px);
+  animation: about-backdrop-in 160ms ease-out;
+}
+
+.about-dialog {
+  position: relative;
+  width: min(520px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  border: 1px solid rgba(102, 88, 217, 0.18);
+  border-radius: 22px;
+  color: #28262f;
+  background:
+    radial-gradient(
+      circle at 90% -10%,
+      rgba(101, 88, 217, 0.15),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at -5% 30%,
+      rgba(232, 138, 80, 0.1),
+      transparent 30%
+    ),
+    #fff;
+  box-shadow:
+    0 32px 90px rgba(20, 17, 38, 0.3),
+    0 8px 24px rgba(20, 17, 38, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  animation: about-dialog-in 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.about-dialog__dismiss {
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  border-radius: 10px;
+  color: #77727f;
+  background: rgba(255, 255, 255, 0.62);
+  cursor: pointer;
+  transition:
+    color 140ms ease,
+    background 140ms ease,
+    transform 140ms ease;
+}
+
+.about-dialog__dismiss:hover {
+  color: #28262f;
+  background: rgba(101, 88, 217, 0.1);
+}
+
+.about-dialog__dismiss:active {
+  transform: scale(0.94);
+}
+
+.about-dialog__hero {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 32px 60px 22px 30px;
+}
+
+.about-dialog__logo {
+  position: relative;
+  display: grid;
+  width: 76px;
+  height: 76px;
+  flex: 0 0 76px;
+  place-items: center;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.about-dialog__logo::before {
+  position: absolute;
+  z-index: -1;
+  inset: -8px;
+  border-radius: 26px;
+  content: "";
+  background: radial-gradient(
+    circle,
+    rgba(101, 88, 217, 0.2),
+    transparent 70%
+  );
+  filter: blur(5px);
+}
+
+.about-dialog__logo img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border-radius: 17px;
+  object-fit: contain;
+  user-select: none;
+}
+
+.about-dialog__logo span {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #6558d9;
+  border-radius: 12px 5px 12px 5px;
+  box-shadow: 0 8px 18px rgba(101, 88, 217, 0.12);
+}
+
+.about-dialog__logo span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.about-dialog__logo span:nth-child(2) {
+  top: 11px;
+  left: 11px;
+  border-color: #e88a50;
+}
+
+.about-dialog__logo span:nth-child(3) {
+  top: 22px;
+  left: 22px;
+  border-color: #2d2b31;
+}
+
+.about-dialog__product-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-dialog__product-row h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.about-dialog__version {
+  padding: 4px 8px;
+  border: 1px solid rgba(101, 88, 217, 0.16);
+  border-radius: 999px;
+  color: #6558d9;
+  background: rgba(101, 88, 217, 0.08);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.about-dialog__tagline {
+  margin: 5px 0 0;
+  color: #77727f;
+  font-size: 13px;
+}
+
+.about-dialog__content {
+  padding: 0 30px 26px;
+}
+
+.about-dialog__description {
+  margin: 0;
+  color: #48444f;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.about-dialog__features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 17px;
+}
+
+.about-dialog__features span {
+  padding: 6px 10px;
+  border: 1px solid #e5e1ec;
+  border-radius: 999px;
+  color: #5d5865;
+  background: rgba(249, 248, 252, 0.86);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.about-dialog__divider {
+  height: 1px;
+  margin: 23px 0 18px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ded9e7 12%,
+    #ded9e7 88%,
+    transparent
+  );
+}
+
+.about-dialog__legal {
+  margin: 0 0 8px;
+  color: #77727f;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.about-dialog__legal:last-child {
+  margin-bottom: 0;
+}
+
+.about-dialog__legal strong {
+  color: #504b58;
+  font-weight: 700;
+}
+
+.about-dialog__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  padding: 17px 22px 17px 30px;
+  border-top: 1px solid #ebe8ef;
+  background: rgba(248, 247, 251, 0.78);
+}
+
+.about-dialog__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-dialog__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 13px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 140ms ease,
+    border-color 140ms ease,
+    transform 140ms ease;
+}
+
+.about-dialog__close {
+  min-width: 74px;
+  border: 1px solid #6558d9;
+  color: #fff;
+  background: #6558d9;
+  box-shadow: 0 5px 14px rgba(101, 88, 217, 0.24);
+}
+
+.about-dialog__close:hover {
+  border-color: #574bc9;
+  background: #574bc9;
+}
+
+.about-dialog__website:active,
+.about-dialog__close:active {
+  transform: translateY(1px);
+}
+
+@keyframes about-backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes about-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.975);
+  }
+}
+
+@media (max-width: 560px) {
+  .about-backdrop {
+    padding: 12px;
+  }
+
+  .about-dialog {
+    max-height: calc(100vh - 24px);
+    border-radius: 18px;
+  }
+
+  .about-dialog__hero {
+    padding: 28px 50px 20px 22px;
+  }
+
+  .about-dialog__content {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .about-dialog__footer {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 16px 22px;
+  }
+
+  .about-dialog__actions {
+    width: 100%;
+  }
+
+  .about-dialog__website,
+  .about-dialog__close {
+    flex: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-backdrop,
+  .about-dialog {
+    animation: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-dialog__logo {
+    width: 66px;
+    height: 66px;
+    flex-basis: 66px;
+    border-radius: 17px;
+  }
+
+  .about-dialog__logo img {
+    width: 62px;
+    height: 62px;
+    border-radius: 14px;
+  }
+}

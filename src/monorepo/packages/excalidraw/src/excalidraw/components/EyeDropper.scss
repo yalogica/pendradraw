@@ -1,0 +1,55 @@
+.excalidraw {
+  .excalidraw-eye-dropper-container,
+  .excalidraw-eye-dropper-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--zIndex-eyeDropperBackdrop);
+    touch-action: none;
+  }
+
+  .excalidraw-eye-dropper-container {
+    pointer-events: none;
+  }
+
+  .excalidraw-eye-dropper-backdrop {
+    pointer-events: all;
+  }
+
+  .excalidraw-eye-dropper-preview {
+    pointer-events: none;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    z-index: var(--zIndex-eyeDropperPreview);
+    border-radius: 50%;
+    border: 1px solid var(--eye-dropper-preview-border-color, #222);
+    box-shadow: 2px 2px 0 0 #4949497c;
+  }
+
+  .excalidraw-eye-dropper-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1.45rem;
+    height: 1.45rem;
+    padding: 0.1875rem;
+    
+    border: none;
+    border-radius: var(--border-radius-md);
+
+    color: var(--icon-fill-color);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--button-hover-bg);
+    }
+    &.selected {
+      color: var(--color-primary);
+      background: var(--color-primary-light);
+    }
+  }
+}
